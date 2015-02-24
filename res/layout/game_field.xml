@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/background">
+    <Button
+            android:onClick="onClickPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pause"
+            android:id="@+id/btnPause"
+            android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:gravity="center"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnPause" android:id="@+id/linearLayout">
+            <com.example.FieldView
+                    android:id="@+id/fieldView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+            </com.example.FieldView>
+    </LinearLayout>
+    <TextView
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="Score:"
+            android:id="@+id/textScore"
+            android:layout_alignTop="@+id/btnPause" android:layout_alignBottom="@+id/btnPause"
+            android:layout_alignLeft="@+id/linearLayout" android:textColor="@color/TextMenuColor"
+            android:textSize="25dp" android:gravity="center"/>
+    <TextView
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/countScore"
+            android:layout_toLeftOf="@+id/btnPause" android:layout_alignTop="@+id/btnPause"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="128dp"
+            android:layout_alignBottom="@+id/btnPause" android:textColor="@color/TextMenuColor"
+            android:textSize="25dp" android:gravity="center"/>
+</RelativeLayout>

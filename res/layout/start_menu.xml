@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:baselineAligned="false" android:background="@drawable/background">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bubble Breaker"
+            android:id="@+id/textBubbleBreaker" android:textSize="30dp" android:gravity="center"
+            android:autoText="false" android:textColor="@color/TextMenuColor" android:layout_marginTop="19dp"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <Button
+                android:onClick="onClickStartGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Game"
+                android:id="@+id/buttonStartGame"
+                android:clickable="true"
+                android:singleLine="false" android:minWidth="100dp"
+                android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"/>
+        <Button
+                android:onClick="onClickOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option"
+                android:id="@+id/buttonOption"
+                android:minWidth="100dp"
+                android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="140dp"/>
+        <Button
+                android:onClick="onClickHighscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highscore"
+                android:id="@+id/buttonHighscore"
+                android:minWidth="100dp" android:layout_alignLeft="@+id/buttonStartGame"
+                android:layout_alignParentTop="true" android:layout_marginTop="80dp"/>
+        <Button
+                android:onClick="onClickExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:id="@+id/btnExit"
+                android:minWidth="100dp"
+                android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="200dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/background">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="81dp"
+                android:text="Finita la Comedia!"
+                android:id="@+id/textView" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:textSize="25dp" android:textColor="@color/TextMenuColor"
+                android:layout_alignParentRight="true" android:layout_alignParentLeft="true" android:gravity="center"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Again"
+                android:id="@+id/btnAgain" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="120dp" android:minWidth="100dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enough"
+                android:id="@+id/btnEnough" android:layout_alignLeft="@+id/btnAgain" android:layout_alignParentTop="true"
+                android:layout_marginTop="220dp" android:minWidth="100dp"/>
+    </RelativeLayout>
+</LinearLayout>

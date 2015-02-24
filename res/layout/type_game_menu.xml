@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="@drawable/background">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Type Game"
+            android:id="@+id/textTypeGame" android:layout_gravity="center" android:textSize="30dp"
+            android:layout_marginTop="19dp" android:textColor="@color/TextMenuColor" android:gravity="center"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center">
+        <Button
+                android:onClick="onClickPlayAlone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play alone (forever)"
+                android:id="@+id/btnPlayAlone"
+                android:minWidth="200dp" android:layout_alignParentLeft="true" android:layout_marginLeft="70dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="55dp" android:gravity="center"/>
+        <Button
+                android:onClick="onClickPlayWithFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play with friend"
+                android:id="@+id/buttonPlayWithFriend"
+                android:minWidth="200dp"
+                android:layout_alignLeft="@+id/buttonPlayAlone" android:layout_alignRight="@+id/btnPlayAlone"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="160dp"/>
+    </RelativeLayout>
+</LinearLayout>

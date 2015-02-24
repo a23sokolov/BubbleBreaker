@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BubbleBreaker</string>
+    <string-array name="type">
+        <item>Megashift</item>
+        <item>Standart</item>
+    </string-array>
+    <color name="MenuBackground">#ffd364</color>
+    <color name="TextMenuColor">#ffffff</color>
+</resources>

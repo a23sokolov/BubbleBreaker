@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/background">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Option"
+            android:id="@+id/textOption" android:layout_gravity="center" android:textSize="30dp"
+            android:textColor="@color/TextMenuColor" android:gravity="center" android:layout_marginTop="19dp"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound"
+                android:id="@+id/textSound"
+                android:textSize="30dp"
+                android:textColor="@color/TextMenuColor" android:layout_alignParentLeft="true" android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="50dp"/>
+        <ToggleButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="New ToggleButton"
+                android:id="@+id/toggleOnOff"
+                android:layout_alignParentLeft="false" android:layout_marginLeft="220dp"
+                android:layout_marginTop="40dp" android:layout_alignRight="@+id/btnBack"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:id="@+id/textType"
+                android:layout_alignLeft="@+id/textSound"
+                android:layout_alignParentTop="true" android:layout_marginTop="140dp" android:textSize="30dp"
+                android:textColor="@color/TextMenuColor"/>
+        <Spinner
+                android:entries="@array/type"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_alignTop="@+id/textType"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="140dp" android:layout_alignRight="@+id/toggleOnOff"/>
+    </RelativeLayout>
+</LinearLayout>
